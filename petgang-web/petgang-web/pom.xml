@@ -20,6 +20,10 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.petgang</groupId>
+			<artifactId>petgang-service</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
