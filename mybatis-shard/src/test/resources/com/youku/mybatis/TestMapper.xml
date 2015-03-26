@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.youku.mybatis.TestDao">
+
+    <select id="current" resultType="java.util.Date">
+    	 SELECT CURRENT_TIME() AS current
+    </select>
+    <select id="current$Master" resultType="java.util.Date">
+    	 SELECT CURRENT_TIME() AS current
+    </select>
+
+    <insert id="save">
+        SELECT 1 AS save
+        <selectKey keyProperty="id" resultType="int" order="AFTER">
+            SELECT 1 as save
+        </selectKey>
+    </insert>
+</mapper>
