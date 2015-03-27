@@ -14,16 +14,17 @@ import org.springframework.web.servlet.View;
 @Controller
 public class IndexController {
 
-    @Resource(name = "jsonView")
-    private View jsonView;
-
     @Autowired
     private Properties configProperties;
+
+    @Resource(name = "jsonView")
+    private View jsonView;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView(jsonView);
-        mav.addObject("asdfasdf", configProperties.getProperty("mysql.biz.master"));
-        return mav;
+
+        return mav.addObject(configProperties.getProperty("mysql.biz.master"));
     }
+
 }

@@ -9,6 +9,5 @@
   ">
 
   <import resource="/service/applicationContext-dao.xml"/>
-  <import resource="/service/applicationContext-service.xml"/>
 
 </beans>

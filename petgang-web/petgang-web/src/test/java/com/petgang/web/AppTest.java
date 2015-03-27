@@ -1,4 +1,4 @@
-package com.petgang.service;
+package com.petgang.web;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
