@@ -9,7 +9,11 @@
 						   http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
 
 	<bean id="configProperties" class="com.petgang.web.PropertiesFactoryBeanAdapter">
-		<property name="locationParttern" value="classpath:/dev/*.properties" />
+		<property name="locationParttern" value="classpath:/config/dev/*.properties" />
+	</bean>
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties" ref="configProperties" />
 	</bean>
 
 </beans>

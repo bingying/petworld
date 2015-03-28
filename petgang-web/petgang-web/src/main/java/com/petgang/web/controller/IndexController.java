@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 
+import com.petgang.service.user.UserService;
+
 @Controller
 public class IndexController {
 
@@ -20,11 +22,13 @@ public class IndexController {
     @Resource(name = "jsonView")
     private View jsonView;
 
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView index() {
         ModelAndView mav = new ModelAndView(jsonView);
-
-        return mav.addObject(configProperties.getProperty("mysql.biz.master"));
+        return mav.addObject(userService.get());
     }
 
 }
