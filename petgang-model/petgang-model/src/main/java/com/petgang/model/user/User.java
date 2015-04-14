@@ -10,6 +10,12 @@ public class User {
 
     private String nickName;
 
+    private String faceUrl;
+
+    private String email;
+
+    private String tel;
+
     private int city;
 
     private int gender;
@@ -46,6 +52,30 @@ public class User {
 
     public void setNickName(String nickName) {
         this.nickName = nickName;
+    }
+
+    public String getFaceUrl() {
+        return faceUrl;
+    }
+
+    public void setFaceUrl(String faceUrl) {
+        this.faceUrl = faceUrl;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public int getCity() {

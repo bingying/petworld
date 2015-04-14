@@ -23,6 +23,10 @@
 			<artifactId>petgang-service</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.petgang</groupId>
+			<artifactId>petgang-commons</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>

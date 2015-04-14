@@ -22,13 +22,18 @@
 			</dependency>
 			<dependency>
 				<groupId>com.petgang</groupId>
+				<artifactId>petgang-commons</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.petgang</groupId>
 				<artifactId>petgang-mybatis-shard</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-			    <groupId>com.petgang</groupId>
-			    <artifactId>petgang-model</artifactId>
-			    <version>0.0.1-SNAPSHOT</version>
+				<groupId>com.petgang</groupId>
+				<artifactId>petgang-model</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jsoup</groupId>
@@ -109,17 +114,12 @@
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpclient</artifactId>
-				<version>4.2.5</version>
+				<version>4.4</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.httpcomponents</groupId>
 				<artifactId>httpcore</artifactId>
-				<version>4.2.4</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-httpclient</groupId>
-				<artifactId>commons-httpclient</artifactId>
-				<version>3.1</version>
+				<version>4.4</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-collections</groupId>
@@ -422,6 +422,16 @@
 				<groupId>org.apache.solr</groupId>
 				<artifactId>solr-solrj</artifactId>
 				<version>4.7.2</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.4</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpmime</artifactId>
+				<version>4.4</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

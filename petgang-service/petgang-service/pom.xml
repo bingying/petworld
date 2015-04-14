@@ -20,14 +20,18 @@
 	</properties>
 
 	<dependencies>
-	    <dependency>
-	        <groupId>com.petgang</groupId>
-	        <artifactId>petgang-mybatis-shard</artifactId>
-	    </dependency>
-	    <dependency>
-	        <groupId>com.petgang</groupId>
-	        <artifactId>petgang-model</artifactId>
-	    </dependency>
+		<dependency>
+			<groupId>com.petgang</groupId>
+			<artifactId>petgang-mybatis-shard</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.petgang</groupId>
+			<artifactId>petgang-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.petgang</groupId>
+			<artifactId>petgang-model</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

@@ -1,4 +1,4 @@
-package com.petgang.web;
+package com.petgang.commons;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
