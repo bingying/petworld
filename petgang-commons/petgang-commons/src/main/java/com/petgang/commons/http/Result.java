@@ -2,8 +2,14 @@ package com.petgang.commons.http;
 
 public class Result {
 
+    /**
+     * HTTP请求状态码
+     */
     private int code;
 
+    /**
+     * 请求结果
+     */
     private String body;
 
     public int getCode() {
