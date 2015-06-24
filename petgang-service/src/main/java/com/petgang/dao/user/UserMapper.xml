@@ -5,6 +5,9 @@
         <id property="id" column="pk_user"/>
         <result property="age" column="age"/>
         <result property="nickName" column="nick_name"/>
+        <result property="faceUrl" column="face_url"/>
+        <result property="password" column="password"/>
+        <result property="tel" column="tel"/>
         <result property="city" column="city"/>
         <result property="gender" column="gender"/>
         <result property="createTime" column="create_time"/>
@@ -14,4 +17,11 @@
         select * from t_user
     </select>
     
+    <insert id="insertNewUser" parameterMap="com.petgang.model.user.User" keyProperty="id" useGeneratedKeys="true">
+        insert into t_user(nick_name,face_url,password,tel) values(#{nickName},#{faceUrl},#{password},#{tel})
+    </insert>
+    
+    <select id="selectByUserId" resultMap="all_field">
+        select * from t_user where id=#{userId}
+    </select>
 </mapper>

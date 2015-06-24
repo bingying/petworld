@@ -6,5 +6,10 @@ import com.petgang.model.user.User;
 
 public interface UserMapper {
 
-    List<User> select();
+	List<User> select();
+
+	int insertNewUser(User user);
+
+	User selectByUserId(int userId);
+
 }

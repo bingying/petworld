@@ -4,94 +4,94 @@ import java.util.Date;
 
 public class User {
 
-    private int id;
+	private int id=0;
 
-    private int age;
+	private int age;
 
-    private String nickName;
+	private String nickName;
 
-    private String faceUrl;
+	private String faceUrl;
 
-    private String email;
+	private String tel;
 
-    private String tel;
+	private String password;
 
-    private int city;
+	private int city;
 
-    private int gender;
+	private int gender;
 
-    private Date createTime;
+	private Date createTime;
 
-    public Date getCreateTime() {
-        return createTime;
-    }
+	public Date getCreateTime() {
+		return createTime;
+	}
 
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
 
-    public int getId() {
-        return id;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public int getAge() {
-        return age;
-    }
+	public int getAge() {
+		return age;
+	}
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+	public void setAge(int age) {
+		this.age = age;
+	}
 
-    public String getNickName() {
-        return nickName;
-    }
+	public String getNickName() {
+		return nickName;
+	}
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
+	public void setNickName(String nickName) {
+		this.nickName = nickName;
+	}
 
-    public String getFaceUrl() {
-        return faceUrl;
-    }
+	public String getFaceUrl() {
+		return faceUrl;
+	}
 
-    public void setFaceUrl(String faceUrl) {
-        this.faceUrl = faceUrl;
-    }
+	public void setFaceUrl(String faceUrl) {
+		this.faceUrl = faceUrl;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getTel() {
+		return tel;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
 
-    public String getTel() {
-        return tel;
-    }
+	public int getCity() {
+		return city;
+	}
 
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
+	public void setCity(int city) {
+		this.city = city;
+	}
 
-    public int getCity() {
-        return city;
-    }
+	public int getGender() {
+		return gender;
+	}
 
-    public void setCity(int city) {
-        this.city = city;
-    }
+	public void setGender(int gender) {
+		this.gender = gender;
+	}
 
-    public int getGender() {
-        return gender;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public void setGender(int gender) {
-        this.gender = gender;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 }
