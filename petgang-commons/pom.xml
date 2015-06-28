@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-	    <groupId>petgang</groupId>
-	    <artifactId>petgang-root</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
+		<groupId>petgang</groupId>
+		<artifactId>petgang-root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	
+
 	<groupId>com.petgang</groupId>
 	<artifactId>petgang-commons</artifactId>
 	<packaging>jar</packaging>
@@ -23,7 +23,6 @@
 		<dependency>
 			<groupId>org.htmlparser</groupId>
 			<artifactId>htmlparser</artifactId>
-			<version>2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -41,7 +40,6 @@
 		<dependency>
 			<groupId>org.devlib.schmidt</groupId>
 			<artifactId>imageinfo</artifactId>
-			<version>1.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -54,17 +52,14 @@
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-xc</artifactId>
-			<version>1.9.13</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-smile</artifactId>
-			<version>1.9.13</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mrbean</artifactId>
-			<version>1.9.13</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
@@ -73,6 +68,18 @@
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
 		</dependency>
 	</dependencies>
 </project>

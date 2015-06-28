@@ -15,5 +15,7 @@
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="properties" ref="configProperties" />
 	</bean>
-
+    <bean class="com.petgang.service.upload.FileUploadServer">
+        <property name="url" value="${file.upload.url}"/>
+    </bean>
 </beans>

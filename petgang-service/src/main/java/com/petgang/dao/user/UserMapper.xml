@@ -7,6 +7,7 @@
         <result property="nickName" column="nick_name"/>
         <result property="faceUrl" column="face_url"/>
         <result property="password" column="password"/>
+        <result property="passport" column="passport"/>
         <result property="tel" column="tel"/>
         <result property="city" column="city"/>
         <result property="gender" column="gender"/>
@@ -17,11 +18,21 @@
         select * from t_user
     </select>
     
-    <insert id="insertNewUser" parameterMap="com.petgang.model.user.User" keyProperty="id" useGeneratedKeys="true">
-        insert into t_user(nick_name,face_url,password,tel) values(#{nickName},#{faceUrl},#{password},#{tel})
+    <insert id="insertNewUser" parameterType="com.petgang.model.user.User" keyProperty="id" useGeneratedKeys="true">
+        insert into t_user(nick_name,face_url,password,passport,tel) values(#{nickName},#{faceUrl},#{password},#{passport},#{tel})
     </insert>
     
     <select id="selectByUserId" resultMap="all_field">
-        select * from t_user where id=#{userId}
+        select * from t_user where pk_user=#{userId}
     </select>
+    
+    <update id="updateNickName">
+         update t_user set nick_name=#{nickName} where pk_user=#{userId}
+    </update>
+    <update id="updateFaceUrl">
+         update t_user set face_url=#{faceUrl} where pk_user=#{userId}
+    </update>
+    <update id="updateGender">
+         update t_user set gender=#{gender} where pk_user=#{userId}
+    </update>
 </mapper>

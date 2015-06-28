@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class User {
 
-	private int id=0;
+	private int id = 0;
 
 	private int age;
 
@@ -13,6 +13,8 @@ public class User {
 	private String faceUrl;
 
 	private String tel;
+
+	private String passport;
 
 	private String password;
 
@@ -84,6 +86,14 @@ public class User {
 
 	public void setGender(int gender) {
 		this.gender = gender;
+	}
+
+	public String getPassport() {
+		return passport;
+	}
+
+	public void setPassport(String passport) {
+		this.passport = passport;
 	}
 
 	public String getPassword() {

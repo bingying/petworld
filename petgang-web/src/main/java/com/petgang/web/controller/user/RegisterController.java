@@ -59,7 +59,7 @@ public class RegisterController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/v1/register/captcha", method = RequestMethod.POST)
+	@RequestMapping(value = "/v1/register/captcha", method = RequestMethod.GET)
 	public ModelAndView getCaptcha(@RequestParam("tel") String tel) {
 		ModelAndView mav = new ModelAndView(jsonView);
 
