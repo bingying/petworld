@@ -6,4 +6,8 @@
 
 
 	<bean class="com.petgang.service.user.impl.UserServiceImpl" />
+	
+	<bean class="com.petgang.service.pet.impl.PetServiceImpl"/>
+	
+	<bean class="com.petgang.service.pet.impl.PetCategoryServiceImpl"/>
 </beans>
