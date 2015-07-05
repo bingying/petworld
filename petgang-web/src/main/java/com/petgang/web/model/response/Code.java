@@ -2,7 +2,9 @@ package com.petgang.web.model.response;
 
 public enum Code implements BaseCode {
 	SUCCESS(0, "成功"), //
-	FAILED(1000, "服务器开小差");
+	FAILED(1000, "服务器开小差"), //
+	C304(304, "资源无需更新");
+
 	private int code;
 	private String desc = "";
 	private Code(int code, String desc) {

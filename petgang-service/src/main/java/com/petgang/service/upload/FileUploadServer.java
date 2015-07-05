@@ -20,7 +20,7 @@ import com.petgang.commons.http.Result;
  */
 public class FileUploadServer {
 
-	private final String url = "";
+	private String url = "";
 
 	public Map<String, String> uploadMulti(Map<String, byte[]> fileMap) {
 
@@ -46,6 +46,9 @@ public class FileUploadServer {
 
 	public String getUrl() {
 		return url;
+	}
+	public void setUrl(String url){
+		this.url=url;
 	}
 
 }

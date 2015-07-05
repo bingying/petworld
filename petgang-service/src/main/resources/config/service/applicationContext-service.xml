@@ -10,4 +10,8 @@
 	<bean class="com.petgang.service.pet.impl.PetServiceImpl"/>
 	
 	<bean class="com.petgang.service.pet.impl.PetCategoryServiceImpl"/>
+	
+	<bean class="com.petgang.service.upload.FileUploadServer">
+        <property name="url" value="${file.upload.url}"/>
+    </bean>
 </beans>
